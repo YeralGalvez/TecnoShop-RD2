@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f6fa;
+    color: #222;
+}
+
+header {
+    background: #101b35;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #00c8ff;
+}
+
+.hero {
+    min-height: 400px;
+    background:
+        linear-gradient(90deg, #101b35dd, #101b3570),
+        url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600") center/cover;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00a8e8;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.productos {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.productos h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.seccion-desc {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000012;
+    transition: transform .3s;
+}
+
+.producto:hover {
+    transform: translateY(-7px);
+}
+
+.producto img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin: 15px 0;
+}
+
+.producto p {
+    color: #666;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.producto strong {
+    display: block;
+    color: #008cba;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #101b35;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00a8e8;
+}
+
+.ofertas {
+    background: #101b35;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.ofertas h2 {
+    margin-bottom: 15px;
+}
+
+.ofertas .btn {
+    margin-top: 20px;
+}
+
+footer {
+    background: #080f20;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    line-height: 2;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}

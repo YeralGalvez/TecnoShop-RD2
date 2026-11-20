@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoShop RD | Tienda Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>💻 TecnoShop RD</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div>
+            <h2>La tecnología que necesitas</h2>
+            <p>Encuentra laptops, accesorios y equipos informáticos al mejor precio.</p>
+            <a href="#productos" class="btn">Ver productos</a>
+        </div>
+    </section>
+
+    <section class="productos" id="productos">
+        <h2>Nuestros productos</h2>
+        <p class="seccion-desc">En TecnoShop RD seleccionamos los mejores equipos y accesorios informáticos para que
+            trabajes, estudies y juegues sin límites. Cada producto cuenta con garantía, soporte técnico local y los
+            mejores precios del mercado dominicano.</p>
+
+        <div class="catalogo">
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600" alt="Laptop">
+                <h3>Laptop profesional</h3>
+                <p>Laptop de alto rendimiento con procesador de última generación, 8GB de RAM y disco SSD de 256GB.
+                    Ideal para trabajar, estudiar y manejar múltiples aplicaciones sin perder velocidad. Diseño liviano
+                    y batería de larga duración.</p>
+                <strong>RD$ 35,000</strong>
+                <button onclick="comprar('Laptop profesional')">Comprar</button>
+            </article>
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=600" alt="Mouse">
+                <h3>Mouse inalámbrico</h3>
+                <p>Mouse ergonómico con conexión inalámbrica de 2.4 GHz, sensor óptico de alta precisión y diseño cómodo
+                    para largas jornadas de uso. Compatible con Windows y Mac. Incluye receptor USB y batería de larga
+                    duración.</p>
+                <strong>RD$ 950</strong>
+                <button onclick="comprar('Mouse inalámbrico')">Comprar</button>
+            </article>
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600" alt="Teclado">
+                <h3>Teclado mecánico</h3>
+                <p>Teclado mecánico con switches de respuesta táctil, retroiluminación RGB personalizable y construcción
+                    resistente. Perfecto para gaming intenso y trabajo de oficina. Anti-ghosting y teclas programables
+                    para máxima productividad.</p>
+                <strong>RD$ 2,500</strong>
+                <button onclick="comprar('Teclado mecánico')">Comprar</button>
+            </article>
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600" alt="Monitor">
+                <h3>Monitor HD</h3>
+                <p>Monitor de 24 pulgadas con resolución Full HD 1080p, panel IPS con colores vibrantes y ángulos de
+                    visión amplios. Incluye puertos HDMI y VGA. Ideal para diseño, entretenimiento y trabajo multitarea
+                    con imagen nítida.</p>
+                <strong>RD$ 12,500</strong>
+                <button onclick="comprar('Monitor HD')">Comprar</button>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="ofertas" id="ofertas">
+        <h2> Ofertas especiales</h2>
+        <p>¡Equipa tu espacio de trabajo con la mejor tecnología!</p>
+        <a href="#productos" class="btn">Comprar ahora</a>
+    </section>
+
+    <footer id="contacto">
+        <h2>TecnoShop RD</h2>
+        <p>Tu tienda de tecnología de confianza.</p>
+        <p>WhatsApp: 8294982441</p>
+        <p>© 2026 TecnoShop RD - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
